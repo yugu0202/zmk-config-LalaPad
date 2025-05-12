@@ -213,19 +213,6 @@ text {
     line-height: 1;
 }
 
-/* Layer labels */
-text.label {
-    font-size: 36px;
-    text-anchor: start;
-    paint-order: stroke;
-    fill: var(--color--layer--text);
-    translate: 581px 146px;
-}
-.layer-Fn text.label {
-    translate: 581px 164px;
-}
-
-
 /* Keys */
 rect.key,
 rect.combo {
