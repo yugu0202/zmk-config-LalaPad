@@ -268,7 +268,7 @@ draw_config:
   outer_pad_h: 0
 
   # gap between two halves for ortho layout generator
-  # split_gap: 20 # This doesn't seem to have any effect either? 🤔
+  split_gap: 20 # This doesn't seem to have any effect either? 🤔
 
   # as it reads on the tin can, this comment is here for consistency
   append_colon_to_layer_header: false
