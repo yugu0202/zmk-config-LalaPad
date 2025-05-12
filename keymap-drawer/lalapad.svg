@@ -212,6 +212,13 @@ text {
     dominant-baseline: middle;
     line-height: 1;
 }
+/* Layer labels */
+text.label {
+  font-size: 36px;
+  text-anchor: start;
+  paint-order: stroke;
+  fill: var(--color--layer--text);
+}
 
 /* Keys */
 rect.key,
@@ -368,17 +375,9 @@ path.combo {
 .shifted.mdi\:alpha-w-box {
   translate: 0px 8px;
 }
-.keypos-38 .shifted.mdi\:alpha-w-box,
-.keypos-39 .shifted.mdi\:alpha-w-box {
-  translate: 0px 20px;
-}
 
 .hold.mdi\:gesture-tap-hold {
   translate: 0px -8px;
-}
-.keypos-38 .hold.mdi\:gesture-tap-hold,
-.keypos-39 .hold.mdi\:gesture-tap-hold {
-  translate: 0px -20px;
 }
 
 .key .mdi\:toggle-switch ~ .mdi\:usb {
