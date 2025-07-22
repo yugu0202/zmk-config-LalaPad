@@ -69,45 +69,49 @@
 / {
     behaviors {
         // Encoder to Mouse Scroll
-
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        scroll_up_down: sensor_scroll_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
             tap-ms = <20>;
+            label = "SCROLL_UP_DOWN";
         };
 
-        scroll_down_up: behavior_sensor_rotate_mouse_wheel_down_up {
+        scroll_down_up: sensor_scroll_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
+            label = "SCROLL_DOWN_UP";
         };
 
-        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
+        scroll_left_right: sensor_scroll_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
             tap-ms = <20>;
+            label = "SCROLL_LEFT_RIGHT";
         };
 
-        scroll_right_left: behavior_sensor_rotate_mouse_wheel_right_left {
+        scroll_right_left: sensor_scroll_right_left {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
 
             tap-ms = <20>;
+            label = "SCROLL_RIGHT_LEFT";
         };
 
-        volume_up_down: behavior_sensor_rotate_volume_up_down {
+        volume_up_down: sensor_volume_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
 
             tap-ms = <20>;
+            label = "VOLUME_UP_DOWN";
         };
 
         dot_comma: dot_comma {
@@ -253,11 +257,11 @@
         MOUSE_L_LAYER {
             display-name = "mouse_l_layer";
             bindings = <
-&trans              &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&mo SCROLL_R_LAYER  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans              &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans              &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&mo SCROLL_L_LAYER  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp MB5  &mkp MB4  &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans
             >;
         };
 

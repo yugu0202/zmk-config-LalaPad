@@ -1856,7 +1856,7 @@ path.combo {
 </g>
 <g transform="translate(40, 120)" class="key keypos-12">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<a href="#scroll_r_layer">
+<a href="#scroll_l_layer">
 <text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 62%">scroll_…</tspan></text>
 </a></g>
 <g transform="translate(120, 120)" class="key keypos-13">
@@ -2094,9 +2094,8 @@ path.combo {
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-11" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(40, 120)" class="key trans keypos-12">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-11" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(40, 120)" class="key held keypos-12">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>
 </g>
 <g transform="translate(120, 120)" class="key trans keypos-13">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
