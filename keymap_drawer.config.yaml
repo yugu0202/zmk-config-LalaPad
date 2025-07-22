@@ -264,7 +264,7 @@ draw_config:
   inner_pad_h: 1.5
 
   # padding between layers
-  outer_pad_w: 0
+  outer_pad_w: 20
   outer_pad_h: 0
 
   # gap between two halves for ortho layout generator
